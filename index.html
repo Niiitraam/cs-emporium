@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emporium</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <!-- Titre -->
+<header>
+    <h1>emporium.</h1>
+    
+
+    <!-- navbar -->
+
+    <div class="d-flex justify-content-around" id="navbar-s">
+        <nav class="navbar navbar-expand-md d-flex">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#coll">
+                <span class="navbar-toggler-icon text-center">-</span>
+            </button>
+            <div class="collapse navbar-collapse" id="coll">
+                <ul class="navbar-nav mt-3 mb-3 ml-5 mr-5">
+                    <li class="nav-item"><a href="#home" class="nav-link color-nav">Home</a></li>
+                    <li class="nav-item"><a href="#product" class="nav-link color-nav">Product</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link color-nav">Blog</a></li>
+                    <li class="nav-item"><a href="#elements" class="nav-link color-nav">Elements</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link color-nav">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link color-nav">Contact</a></li>
+                    <li class="nav-item placement-connect">
+                        <div class="mode-clair mr-2" id="blanc"></div>
+                        <div class="mode-sombre mr-2" id="noir"></div>
+                        <button class="btn-connect" id="connect">Connexion</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!-- modal -->
+
+<!-- The Modal -->
+<div id="monModal" class="modal">
+
+  <!-- Contenue Modal -->
+  <div class="modal-content">
+    <span class="close" id="closeFenetre">&times;</span>
+    <div class="container placement-contenu">
+        <div class="connexion">
+            <h1>Connexion</h1>
+            <div class="flex-connect">
+            <span>Adresse mail</span>
+            <input type="email" placeholder="mail">
+            <span>Mot de passe</span>
+            <input type="password" placeholder="mot de passe">
+            </div>
+            <button class="mt-3">Se connecter</button>
+            <p class="mt-3">Si vous n'avez pas encore de compte, <a href="#" class="lien-color" id="lienInscription">inscrivez-vous</a></p>
+        </div>
+        <div class="inscription">
+            <h1>Inscription</h1>
+            <div class="flex-connect">
+            <span>Nom</span>
+            <input type="text" placeholder="Nom">
+            <span>Prénom</span>
+            <input type="text" placeholder="prénom">
+            <span>Adresse mail</span>
+            <input type="email" placeholder="mail">
+            <span>Mot de passe</span>
+            <input type="password" placeholder="mot de passe">
+            <span>Vérifier votre mot de passe</span>
+            <input type="password" placeholder="mot de passe">
+            </div>
+            <button class="mt-2">S'inscrire</button>
+            <p class="mt-3">Si vous avez déjà un compte, <a href="#" class="lien-color" id="lienConnect">connectez-vous</a></p>
+        </div>
+  </div>
+</div>
+</div>
+    
+    <!-- shop at Emporium -->
+
+    <section id="firstSlide" class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col premierCol">
+                    <div class="shopAt">
+                        <span class="spanSLide1">shop at</span> 
+                        <br>
+                        <img class="logo" src="./images/logo.png" alt="">
+                    </div>
+                    <div>
+                        <p class="preSale">A wonderful serenity has taken possessino of my entire soul, like these sweet mornings of spring which i enjoy with my.</p>
+                        <a href="#RP"><button class="btnSale">SALE ITEMS</button></a>
+                    </div>
+                      
+                </div>
+                <div class="col">
+                    <img class="imgSlide" src="./images/slider-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Categories -->
+    <div class="row categorie d-flex justify-content-around m-5">
+        <div class="col-card bg-1">
+            <div class="div-placement">
+                <p class="size">Living Room</p>
+                <div class="tailleBarre"></div>
+            </div>
+        </div>
+        <div class="col-card bg-2">
+            <div class="div-placement">
+                <p class="size">Sale Items</p>
+                <div class="tailleBarre"></div>
+            </div>
+        </div>
+        <div class="col-card bg-3">
+            <div class="div-placement">
+                <p class="size">Clothes</p>
+                <div class="tailleBarre"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Recents products -->
+    <section>
+        <h3 class="Produits mb-4" id="RP" >Recents Products</h3>
+        <div class="container">
+            <!-- premiere rangée -->
+            <div class="row rangee mb-5">
+                <div class="col-4 info">
+                    <div>
+                        <img class="imgProduits mb-3 img-fluid" src="./images/products_mini/product-luxry-sofa.jpg" alt="">
+                    </div>
+                        <div class="nameAndPrice">
+                            <h6>Luxury Sofa</h3>
+                            <span style="color: red;">$600.00</span>
+                        </div>
+                        
+                    </div>
+                <div class="col-4 info">
+                    <div>
+                        <img class="imgProduits mb-3 img-fluid" src="./images/products_mini/product-gloves.jpg" alt="">
+                    </div>
+                        <div class="d-flex">
+                            <div style="display: flex; justify-content: space-around;" >
+                                <button style="color: white; background-color: red; border-radius: 50px; border: none;">SALE!</button>
+                            </div>
+                            <div>
+                                <div class="nameAndPrice text-center">
+                                    <h6>Leather Gloves</h3>
+                                    <span style="text-decoration: line-through;font-size: 13px;">$34.00</span>
+                                    <span style="color: red;">$27.00</span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-4 info">
+                    <img class="imgProduits mb-3 img-fluid" src="./images/products_mini/product-cups.jpg" alt="">
+                    
+                    <div class="nameAndPrice">
+                        <h6>Luxury Sofa</h3>
+                        <span style="color: red;">$600.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- deuxieme rangée -->
+            <div class="row rangee mb-5">
+                <div class="col-4 info">
+                    <img class="imgProduits mb-3 img-fluid" src="./images/products_mini/product-bag.jpg">
+                    <div class="d-flex">
+                        <div style="display: flex; justify-content: space-around;" >
+                            <button style="color: white; background-color: red; border-radius: 50px; border: none;">SALE!</button>
+                        </div>
+                    <div>
+                    <div class="nameAndPrice text-center">
+                        <h6>Women Bag</h3>
+                            <span style="text-decoration: line-through; font-size: 13px;">$420.00</span>
+                            <span style="color: red;">$350.00</span>
+                    </div>
+                </div>
+            </div>
+                    
+               
+        </div>
+                <div class="col-4 info">
+                    <img class="imgProduits mb-3 img-fluid" src="./images/products_mini/product-tshitr.jpg" alt="">
+                    <div class="nameAndPrice">
+                        <h6>Luxury Sofa</h3>
+                        <span style="color: red;">$600.00</span>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-4 info">
+                    <img class="imgProduits mb-3 img-fluid" src="./images/products_mini/product-plates.jpg" alt="">
+                    
+                    <div class="nameAndPrice">
+                        <h6>Plates Set</h3>
+                        <span style="color: red;">$30.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- troisieme rangée -->
+            <div class="row rangee mb-5">
+                <div class="col-4 info">
+                    <img class="imgProduits mb-3 img-fluid" src="./images/products_mini/product-modern-sofa.jpg" alt="">
+                    <div class="nameAndPrice">
+                        <h6>Modern Sofa</h3>
+                        <span style="color: red;">$900.00</span>
+                    </div>
+                    
+                </div>
+                <div class="col-4 info">
+                    <img class="imgProduits mb-3 img-fluid" src="./images/products_mini/product-bed.jpg" alt="">
+                    <div class="nameAndPrice">
+                        <h6>Bed Linen</h3>
+                        <span style="color: red;">$79.00</span>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-4 info">
+                    <img class="imgProduits mb-3 img-fluid" src="./images/products_mini/product-shoes.jpg" alt="">
+                    
+                    <div class="nameAndPrice">
+                        <h6>Minimal shoes</h3>
+                        <span style="color: red;">$60.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- section 4 -->
+
+        <div class="bg-img flex-s4 mb-5">
+            <div class="flex-s4">
+                <p class="text-s4">Discover Thousands Of Great Products</p>
+                <a href="#learnMore"><button class="btnLearn pt-2 pb-2 pl-3 pr-3">Learn more</button></a>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+
+        <section>
+
+            <div class="center">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="card">
+                            <img src="./images/products_mini/product-luxry-sofa.jpg" alt="">
+                            <div class="nameAndPrice">
+                                <h6>Luxury Sofa</h3>
+                                <span style="color: red;">$600.00</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/products_mini/product-gloves.jpg" alt="">
+                            <div class="row">
+                                <div class="col p-0" style="display: flex; justify-content: space-around;" >
+                                    <button style="color: white; background-color: red; border-radius: 50px; border: none;">SALE!</button>
+                                </div>
+                                <div class="col">
+                                    <div class="nameAndPrice text-center">
+                                        <h6>Leather Gloves</h3>
+                                        <span style="text-decoration: line-through;font-size: 13px;">$34.00</span>
+                                        <span style="color: red;">$27.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/products_mini/product-cups.jpg" alt="">
+                            <div class="nameAndPrice">
+                                <h6>Luxury Sofa</h3>
+                                <span style="color: red;">$600.00</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/products_mini/product-bag.jpg" alt="">
+                            <div class="row">
+                                <div class="col" style="display: flex; justify-content: space-around;" >
+                                    <button style="color: white; background-color: red; border-radius: 50px; border: none;">SALE!</button>
+                                </div>
+    
+                                <div class="col">
+                                    <div class="nameAndPrice">
+                                        <h6>Women Bag</h3>
+                                        <span style="text-decoration: line-through; font-size: 13px;">$420.00</span>
+                                        <span style="color: red;">$350.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/products_mini/product-bed.jpg" alt="">
+                            <div class="nameAndPrice">
+                                <h6>Bed Linen</h3>
+                                <span style="color: red;">$79.00</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/products_mini/product-modern-sofa.jpg" alt="">
+                            <div class="nameAndPrice">
+                                <h6>Modern Sofa</h3>
+                                <span style="color: red;">$900.00</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/products_mini/product-plates.jpg" alt="">
+                            <div class="nameAndPrice">
+                                <h6>Plates Set</h3>
+                                <span style="color: red;">$30.00</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/products_mini/product-shoes.jpg" alt="">
+                            <div class="nameAndPrice">
+                                <h6>Minimal shoes</h3>
+                                <span style="color: red;">$60.00</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/products/product-bag-2-700x500.jpg" alt="">
+                            <div class="row">
+                                <div class="col" style="display: flex; justify-content: space-around;" >
+                                    <button style="color: white; background-color: red; border-radius: 50px; border: none;">SALE!</button>
+                                </div>
+    
+                                <div class="col">
+                                    <div class="nameAndPrice">
+                                        <h6>Women Bag</h3>
+                                        <span style="text-decoration: line-through; font-size: 13px;">$420.00</span>
+                                        <span style="color: red;">$350.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img src="./images/products/product-bag-700x500.jpg" alt="">
+                            <div class="content">
+                              <h1>Product Design</h1>
+                              <h3>UI/UX, Design</h3>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img src="./images/products/product-shoes-700x500.jpg" alt="">
+                            <div class="nameAndPrice">
+                                <h6>Minimal shoes</h3>
+                                <span style="color: red;">$60.00</span>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img src="./images/products/product-jacket-700x500.jpg" alt="">
+                            <div class="content">
+                              <h1>Product Design</h1>
+                              <h3>UI/UX, Design</h3>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img src="./images/products_mini/product-tshitr.jpg" alt="">
+                            <div class="nameAndPrice">
+                                <h6>Luxury Sofa</h3>
+                                <span style="color: red;">$600.00</span>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img src="./images/products_mini/product-luxry-sofa.jpg" alt="">
+                            <div class="nameAndPrice">
+                                <h6>Modern Sofa</h3>
+                                <span style="color: red;">$900.00</span>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img src="./images/products_mini/product-modern-sofa.jpg" alt="">
+                            <div class="nameAndPrice">
+                                <h6>Modern Sofa</h3>
+                                <span style="color: red;">$900.00</span>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img src="./images/products_mini/product-cups.jpg" alt="">
+                            <div class="nameAndPrice">
+                                <h6>Luxury Sofa</h3>
+                                <span style="color: red;">$600.00</span>
+                            </div>
+                          </div>
+    
+                    </div>
+                </div>
+    
+                <div class="map">
+                    <button class="active first"></button>
+                    <button class="second"></button>
+                    <button class="third"></button>
+                    <button class="fourth"></button>
+    
+                </div>
+            </div>
+    
+        </section>
+<!-- section 6 -->
+        <div class="row cartes" id="learnMore">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 p-0 card2">
+                <div>
+                    <div><i class="far fa-check-circle"></i></div>
+                    <p class="pb-4"><b>Lorem ipsum dolor sit amet.</b></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nisi repellat animi, minus nostrum rem voluptatem quibusdam inventore beatae tenetur.</p>
+                    <button class="btnLearn2">Learn more</button>
+                </div>
+                
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 p-0 card2">
+                <div><i class="fas fa-paper-plane"></i></div>
+                <p class="pb-4"><b>Lorem ipsum dolor sit amet.</b></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nisi repellat animi, minus nostrum rem voluptatem quibusdam inventore beatae tenetur.</p>
+                <button class="btnLearn2">Learn more</button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 p-0 card2">
+                <div><i class="far fa-check-circle"></i></div>
+                <p class="pb-4"><b>Lorem ipsum dolor sit amet.</b></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nisi repellat animi, minus nostrum rem voluptatem quibusdam inventore beatae tenetur.</p>
+                <button class="btnLearn2">Learn more</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer style="background-color: #383E44; padding: 40px;" id="about">
+            <div class="container" id="bas-de-page">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                        <h6>ABOUT US</h6>
+                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which i enjoy with my whole heart.I am alone, and feel the charm if existence in this spot, which was created og the bliss of ...</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                        <h6>RECENTS POSTS</h6>
+                        <li>Hello World</li>
+                        <li>wonderful serenity has taken</li>
+                        <li>In my soul and absorb its power</li>
+                        <li>I hear the buzz of the little</li>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                        <h6>TAG CLOUD</h6> 
+                        <span class="badge p-2 mr-1 mb-2">business</span>
+                        <span class="badge p-2 mr-1 mb-2">confidence</span>
+                        <span class="badge p-2 mr-1 mb-2">gadgets</span>
+                        <span class="badge p-2 mr-1 mb-2">identity</span>
+                        <span class="badge p-2 mr-1 mb-2">logo</span>
+                        <span class="badge p-2 mr-1 mb-2">photography</span>
+                        <span class="badge p-2 mr-1 mb-2">time</span>
+                        <span class="badge p-2 mr-1 mb-2">trips</span>
+                        <span class="badge p-2 mr-1 mb-2">works</span>
+                        <span class="badge p-2 mr-1 mb-2">work space</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="p-3 text-white text-center" style="background-color: black;">
+            COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED
+        </div>
+
+
+    
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

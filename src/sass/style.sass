@@ -1,0 +1,455 @@
+@import ../../node_modules/bootstrap/scss/bootstrap.scss
+*
+    scroll-behavior: smooth
+.text-nav
+    list-style: none
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    text-transform: uppercase
+a
+    text-decoration: none
+    color: black
+.navbar
+    button
+        border: black solid 1px
+
+a:hover
+    text-decoration: none
+    color: #dd4545
+
+.mode-clair
+    background-color: white
+    height: 20px
+    width: 20px
+    border-radius: 30%
+    border: solid black 1px
+
+.mode-clair:hover
+    border: solid white 1px
+.mode-sombre
+    background-color: black
+    height: 20px
+    width: 20px
+    border-radius: 30%
+    border: solid white 1px
+
+.mode-sombre:hover
+    border: solid black 1px
+
+.btn-connect
+    background-color: grey
+    color: white
+
+.placement-connect
+    display: flex
+    align-items: center
+#connect
+    border: none
+    // modal
+.modal
+  display: none
+  position: block
+  z-index: 1
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  background-color: rgb(0,0,0)
+  background-color: rgba(0,0,0,0.4)
+.modal-content 
+  background-color: #fefefe
+  margin: 15% auto
+  padding: 20px
+  border: 1px solid #888
+  width: 80%
+.close
+  color: #aaa
+  float: right
+  font-size: 28px
+  font-weight: bold
+
+.close:hover,
+.close:focus
+  color: black
+  text-decoration: none
+  cursor: pointer
+
+.placement-contenu
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.lien-color
+    color: #dd4545
+
+.lien-color:hover
+    color: black
+    
+.flex-connect
+    display: flex
+    flex-direction: column
+
+.sticky
+    position: fixed
+    top: 0
+    width: 100%
+
+.content
+    padding: 16px
+
+.sticky+.content
+    padding-top: 60px
+
+#navbar-s
+    z-index: 5
+    background-color: white
+
+//Titre principal
+h1
+    text-align: center
+    padding-left: 5px
+    margin-top: 50px
+    font-size: 60px
+//premiere section
+#firstSlide
+    background-color: whitesmoke
+// premier rangée
+.rangee
+    flex-wrap: nowrap
+    .col-4
+        margin-left: 20px
+        
+// span au dessus du logo"emporium" dans le premier slide
+.premierCol
+     margin-top: 70px
+.spanSLide1
+    color: #dd4545
+    font-size: 50px
+.logo
+    height: 100px
+    @media (min-width: 346px) and ( max-width: 645px)
+        height: 50px
+    margin-bottom: 10px
+
+// deuxieme div de la premiere colonne
+.preSale
+    font-size: 15px
+    color: grey
+    margin-bottom: 25px
+.btnSale
+    background-color: #dd4545
+    color: white
+    border-radius: 20px
+    border: none
+    padding: 10px
+
+.btnSale:hover
+    background-color: black
+    color: white
+
+// image dans la deuxieme colonne
+.imgSlide
+    height: 500px
+    width: 400px
+    @media (min-width: 346px) and ( max-width: 645px)
+        height: 250px
+        width: 200px
+
+// section Recents Products
+.Produits
+    text-align: center
+.imgProduits
+    height: 200px
+    width: 250px
+.info
+    @media (min-width: 768px) and ( max-width: 1024px)
+        img
+            height: 100px
+            width: 150px
+            flex-wrap: nowrap
+            flex-direction: column
+        .nameAndPrice
+            h6
+                font-size: 15px
+    @media (min-width: 346px) and ( max-width: 645px)
+        button
+            padding: 0
+            font-size: 10px
+        img
+            height: 50px
+            width: 100px
+            flex-wrap: nowrap
+            flex-direction: row
+        .nameAndPrice
+            h6
+                font-size: 10px
+.imgProduits:hover
+    transition-duration: 3000ms
+    transform: scale(1.30)
+    z-index: 2
+.nameAndPrice
+    margin: auto
+    button
+        padding: 10px
+        text-align: left
+        @media (min-width: 768px) and ( max-width: 1366px)
+            padding: 10px
+
+.inscription
+    display: none
+.connexion
+    display: block
+// section categories
+.col-card
+    width: 32%
+    height: 220px
+    display: flex
+    justify-content: center
+    align-items: center
+.bg-1
+    background-image: url(../../images/services/service-1.jpg)
+    background-size: cover
+.bg-2
+    background-image: url(../../images/services/service-2.jpg)
+    background-size: cover
+.bg-3
+    background-image: url(../../images/services/slider-3.jpg)
+    background-size: cover
+.size
+    font-size: 45px
+    color: white
+
+.div-placement
+    display: flex
+    justify-content: center
+    align-items: center
+// section 4
+.bg-img
+    height: 750px
+    background-image: url(../../images/cta-bg.jpg)
+    @media (min-width: 346px) and ( max-width: 645px)
+        width: 100%
+.btnLearn
+    color: white
+    background-color: #dd4545
+    border: none
+    border-radius: 5px
+    font-size: 20px
+.btnLearn:hover
+    color: #dd4545
+    background-color: white
+.text-s4
+    font-size: 60px
+    color: white
+.flex-s4
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    // section hot fashion products
+.col-3
+    img
+        height: 190px
+        width: 250px
+.placement-card2
+    display: flex
+    flex-direction: column
+    align-items: center
+.color-span
+    color: #dd4545
+
+.rond
+    height: 20px
+    width: 20px
+    border-radius: 50%
+    border: solid black
+.rond:hover
+    background-color: grey
+
+.placement-rond
+    display: flex
+    justify-content: center
+    align-items: center
+#div2
+    display: none
+
+#div1
+    display: flex
+
+#div3
+    display: none
+
+#div4
+    display: none
+// section 6
+.btnLearn2
+    background-color: black
+    color: white
+    border: none
+    border-radius: 5px
+    font-size: 20px
+
+.btnLearn2:hover
+    background-color: #dd4545
+
+.cartes
+    width: 93%
+    margin-left: 10px
+    flex-wrap: nowrap
+    @media (min-width: 344px) and ( max-width: 645px)
+        width: 50%
+        display: block
+        flex-wrap: nowrap
+    @media (min-width: 646px) and ( max-width: 1024px)
+        width: 30%
+        flex-wrap: wrap
+    .card2
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        margin: 10px
+        background-color: grey
+        padding: 30px
+        height: 300px
+        text-align: center
+        @media (min-width: 646px) and ( max-width: 1024px)
+            font-size: 15px
+            width: 50%
+            height: 300px
+            margin: 5px
+            flex-wrap: wrap
+            button
+                font-size: 15px
+        @media (min-width: 344px) and ( max-width: 645px)
+            font-size: 9px
+            flex-wrap: nowrap
+            flex-direction: column
+            button
+                font-size: 9px
+//Footer
+footer
+    h6
+        color: white     
+    li
+        color: white
+        list-style-type: none
+        &::before 
+            content: '> '
+            color: white
+    p
+        color: gray
+    .badge
+        background-color: #383E44
+        color: gray
+        border: gray 1px solid
+//categories
+.categorie
+    @media (min-width: 346px) and ( max-width: 645px)
+        padding: 10px
+        flex-direction: column
+    .col-card
+        @media (min-width: 346px) and ( max-width: 645px)
+            height: 250px
+            width: 300px
+            margin-bottom: 20px
+.tailleBarre
+    border-top: 2px solid white
+
+.div-placement
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.tailleBarre
+    border-top: 2px solid white
+    width: 100%
+    
+
+.bg-card
+    background-color: #dd4545
+    color: white
+
+.bg-btn
+    background-color: white
+    color: black
+// caroussel
+@mixin circle($i)
+    border-radius: 100%
+    height: $i
+    width: $i
+
+section
+
+        .center
+            align-items: center
+            display: flex
+            flex-direction: column
+            height: 100%
+            justify-content: center
+            .wrapper
+                display: flex
+                grid-gap: 1em
+                overflow: hidden
+                width: 70em
+                @media (min-width: 768px) and ( max-width: 1024px)
+                    width: 35em
+                @media (min-width: 320px) and (max-width: 645px)
+                    width: 20.9em
+                .inner
+                    display: flex
+                    grid-gap: 1em
+                    transition: all 1s ease-in-out
+                    .card
+                        border-radius: 0.5em
+                       
+                        img
+                            border-top-right-radius: inherit
+                            border-top-left-radius: inherit
+                            display: block
+                            width: 16.5em
+                            @media (min-width: 320px) and (max-width: 645px)
+                                width: 10em
+                           
+                        .content
+
+                            border-bottom-left-radius: inherit
+                            border-bottom-right-radius: inherit
+                            padding: 1em
+                            text-align: center
+                        div
+                            h1
+                                margin: 0.35em 0
+
+                                font-size: 1.25rem
+                                line-height: 1
+                            h3
+                                margin: 0.35em 0
+
+                                font-size: 1.25rem
+                                line-height: 1
+            .map
+                margin-top: 1em
+                button
+                    border: solid black 1px
+                    background: grey
+                    outline: none
+                    cursor: pointer
+                    margin: 0 0.125em
+                    position: relative
+                    user-select: none
+                    @include circle(1em)
+
+                    &:active
+                        &::after
+                            background: red
+                            content: ""
+                            left: 50%
+                            position: absolute
+                            transform: translate(-50%, -50%)
+                            top: 50%
+                            @include circle(1em)
